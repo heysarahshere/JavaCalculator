@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Calculadora_Covey</string>
+    <string name="textview">VistaDeTexto</string>
+    <string name="button">Botón</string>
+    <string name="calculate">Calcular</string>
+    <string name="calculator">Calculadora</string>
+    <string name="history">Historia</string>
+    <string name="about">Acerca de</string>
+    <string name="result">Resultado</string>
+    <string name="about_content">
+        Somos un pequeño equipo de desarrolladores del noroeste del Pacífico. Nos esforzamos por hacer que las aplicaciones sean más limpias e intuitivas para el usuario a través de interfaces simples pero hermosas.
+        Esta aplicación combina cálculos simples o avanzados con una gran variedad de conversiones de unidades. Está destinado para uso doméstico y de oficina,
+        y está disponible en inglés y español.
+    </string>
+    <string name="lorem_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </string>
+    <string name="clear">Claro</string>
+    <string name="random">ALEATORIO</string>
+    <string name="sine">SEN</string>
+    <string name="title">Calculadora de Sarah</string>
+    <string name="hint">Ingresar Número</string>
+    <string name="pi">\u03C0</string>
+    <string name="sqr">X\u00B2</string>
+    <string name="sqroot">\u221A</string>
+    <string name="cosine">COS</string>
+    <string name="plusMinus">+/-</string>
+    <string name="percent">%</string>
+    <string name="backspace">\u226A</string>
+    <string name="multiply">*</string>
+    <string name="add">+</string>
+    <string name="divide">/</string>
+    <string name="subtract">-</string>
+    <string name="equals">=</string>
+    <string name="decimal">.</string>
+    <string name="conversions">Conversiones</string>
+    <string name="_0">0</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+</resources>

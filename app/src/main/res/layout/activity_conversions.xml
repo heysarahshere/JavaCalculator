@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_height="40dp"
+        android:layout_width="match_parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:toolbarId="@+id/toolbar"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+
+            app:contentScrim="?attr/colorPrimary">
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2E3131"
+        tools:context=".Conversions">
+
+        <EditText
+            android:id="@+id/firstConvertNumber"
+            android:layout_width="174dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="72dp"
+            android:ems="10"
+            android:hint="From"
+            android:inputType="numberDecimal"
+            android:textColor="#91D5D5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/secondConvertNumber"
+            android:layout_width="173dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="To"
+            android:inputType="numberDecimal"
+            android:textColor="#91D5D5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/firstConvertNumber" />
+
+        <TextView
+            android:id="@+id/convertedFromTextView"
+            android:layout_width="115dp"
+            android:layout_height="30dp"
+            android:text="resultView"
+            android:textColor="#00BCD4"
+            app:layout_constraintBaseline_toBaselineOf="@+id/firstConvertNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.531"
+            app:layout_constraintStart_toEndOf="@+id/firstConvertNumber" />
+
+        <TextView
+            android:id="@+id/convertedToTextView"
+            android:layout_width="115dp"
+            android:layout_height="30dp"
+            android:text="resultView"
+            android:textColor="#00BCD4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.558"
+            app:layout_constraintStart_toEndOf="@+id/secondConvertNumber"
+            app:layout_constraintTop_toBottomOf="@+id/convertedFromTextView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="49dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="24dp"
+            android:text="From"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#00BCD4"
+            app:layout_constraintBaseline_toBaselineOf="@+id/firstConvertNumber"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:textColor="#00BCD4"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="24dp"
+            android:text="To"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/secondConvertNumber"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ListView
+            android:id="@+id/conversionsListView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#2E3131"
+            android:textColor="#00BCD4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/secondConvertNumber" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent">
+    </androidx.appcompat.widget.Toolbar>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
